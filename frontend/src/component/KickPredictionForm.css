@@ -1,109 +1,129 @@
-/* KickPredictionForm.css */
-
-/* Apply a gradient background to the full page */
+/* General styling for the full page */
 .kick-form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #242527, #cbc0dd);
-    padding: 20px;
-  }
-  
-  /* Form card styling */
-  .kick-form-box {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 450px;
-  }
-  
-  /* Title styling */
-  .kick-form-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Label styling */
-  .kick-form-label {
-    display: block;
-    font-size: 14px;
-    color: #444;
-    margin-bottom: 5px;
-  }
-  
-  /* Input fields styling */
-  .kick-form-input {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
-  }
-  
-  .kick-form-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Buttons container */
-  .kick-form-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  /* Predict button */
-  .kick-form-predict-btn {
-    flex: 1;
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .kick-form-predict-btn:hover {
-    background-color: #218838;
-  }
-  
-  /* Reset button */
-  .kick-form-reset-btn {
-    flex: 1;
-    background-color: #dc3545;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .kick-form-reset-btn:hover {
-    background-color: #c82333;
-  }
-  
-  /* Prediction result box */
-  .kick-form-result {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #155724;
-    margin-top: 20px;
-    border: 2px solid #28a745;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5a3f37, #f7a5b5);
+  padding: 0 20px;
+}
+
+/* Form box styling */
+.kick-form-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  transition: transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.kick-form-box:hover {
+  transform: scale(1.02);
+}
+
+/* Title styling */
+.kick-form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Label styling */
+.kick-form-label {
+  display: block;
+  font-size: 16px;
+  color: #4b4b4b;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Input fields styling */
+.kick-form-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kick-form-input:focus {
+  border-color: #009688;
+  box-shadow: 0 0 8px rgba(0, 150, 136, 0.3);
+}
+
+/* Buttons container */
+.kick-form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* Predict button */
+.kick-form-predict-btn {
+  flex: 1;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.kick-form-predict-btn:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset button */
+.kick-form-reset-btn {
+  flex: 1;
+  background-color: #dc3545;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.kick-form-reset-btn:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Prediction result box */
+.kick-form-result {
+  background: #e9f7ef;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #155724;
+  margin-top: 25px;
+  border: 2px solid #28a745;
+}
+
+/* Error message styling */
+.text-red-500 {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
