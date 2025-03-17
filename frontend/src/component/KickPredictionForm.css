@@ -1,0 +1,109 @@
+/* KickPredictionForm.css */
+
+/* Apply a gradient background to the full page */
+.kick-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #242527, #cbc0dd);
+    padding: 20px;
+  }
+  
+  /* Form card styling */
+  .kick-form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  /* Title styling */
+  .kick-form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .kick-form-label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  /* Input fields styling */
+  .kick-form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .kick-form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Buttons container */
+  .kick-form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Predict button */
+  .kick-form-predict-btn {
+    flex: 1;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .kick-form-predict-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Reset button */
+  .kick-form-reset-btn {
+    flex: 1;
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .kick-form-reset-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Prediction result box */
+  .kick-form-result {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #155724;
+    margin-top: 20px;
+    border: 2px solid #28a745;
+  }
+  
